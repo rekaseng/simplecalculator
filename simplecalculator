@@ -1,0 +1,33 @@
+// Reca Seng Binti Mohd Fadzil Seng B031910187 BITI S1G1 
+// Teknik Programming Assignment: Simple Calculator
+#include <iostream>
+using namespace std;
+int main()
+{
+	int firstValue, secondValue, operation;
+	cout << "Insert the first value> " << flush;
+	cin >> firstValue;
+	cout << "Inser the second value> " << flush;
+	cin >> secondValue;
+	cout << "Choose an operation: \n 1.Sum \n 2.Subtract \n 3.Multiply \n 4.Divide \n";
+	cin >> operation;
+	switch (operation)
+	{
+	case 1:
+		cout << "The result is " << firstValue + secondValue << endl;
+		break;
+	case 2:
+		cout << "The result is " << firstValue - secondValue << endl;
+		break;
+	case 3:
+		cout << "The result is " << firstValue * secondValue << endl;
+		break;
+	case 4:
+		cout << "The result is " << firstValue / secondValue <<" and the remainder is "<<firstValue%secondValue<<endl;
+		break;
+	default:
+		cout << "Error! " << endl;
+		break;
+	}
+
+}
